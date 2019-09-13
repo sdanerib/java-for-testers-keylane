@@ -46,4 +46,14 @@ public class Book {
     // Three elements is enough!
     // You can use any title, author and year of publishing you want
 
+    /* 5 */
+
+    // Add a classic for loop to the first method from section 4
+    // (the one where you added the array)
+    // Iterate over the array and print the title of every book in the array to the standard output
+
+    // Add a foreach loop to the second method from section 4
+    // (the one where you added the list)
+    // Iterate over the array and print the title of every book in the list to the standard output
+
 }

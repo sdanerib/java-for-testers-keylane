@@ -33,6 +33,12 @@ public class Book {
         this.yearOfPublishing = yearOfPublishing;
     }
 
+    public Book() {
+        this.title = "default title";
+        this.author = "default author";
+        this.yearOfPublishing = 1900;
+    }
+
     /* 3 */
 
     // Write a method that sets the year of publishing to the current year
@@ -68,6 +74,12 @@ public class Book {
         bookArray[0] = new Book("The Fellowship of the Ring", "J.R.R. Tolkien", 1954);
         bookArray[1] = new Book("The Two Towers", "J.R.R. Tolkien", 1954);
         bookArray[2] = new Book("The Return of the King", "J.R.R. Tolkien", 1955);
+
+        for(int count = 0; count < bookArray.length; count++) {
+            System.out.println(
+                bookArray[count].title
+            );
+        }
     }
 
     // Write a method that creates and fills a list of books
@@ -81,5 +93,21 @@ public class Book {
         bookList.add(new Book("The Girl with the Dragon Tattoo", "Stieg Larsson", 2005));
         bookList.add(new Book("The Girl Who Played with Fire", "Stieg Larsson", 2006));
         bookList.add(new Book("The Girl Who Kicked the Hornet's Nest", "Stieg Larsson", 2007));
+
+        for(Book book: bookList) {
+            System.out.println(
+                book.title
+            );
+        }
     }
+
+    /* 5 */
+
+    // Add a classic for loop to the first method from section 4
+    // (the one where you added the array)
+    // Iterate over the array and print the title of every book in the array to the standard output
+
+    // Add a foreach loop to the second method from section 4
+    // (the one where you added the list)
+    // Iterate over the array and print the title of every book in the list to the standard output
 }

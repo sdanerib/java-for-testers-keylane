@@ -43,7 +43,11 @@ public class Car {
         carArray[1] = new Car("Ford","Focus","blue");
         carArray[2] = new Car("Maserati","Ghibli","black");
 
-        carArray[1].printInfo();
+        for(int count = 0; count < carArray.length; count++) {
+            System.out.println(
+                carArray[count].printInfo()
+            );
+        }
     }
 
     public void aListOfCars() {
@@ -54,6 +58,10 @@ public class Car {
         carList.add(new Car("Ford","Focus","blue"));
         carList.add(new Car("Maserati","Ghibli","black"));
 
-        carList.get(1).printInfo();
+        for(Car car: carList) {
+            System.out.println(
+                car.printInfo()
+            );
+        }
     }
 }
